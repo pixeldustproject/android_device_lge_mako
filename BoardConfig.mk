@@ -60,7 +60,7 @@ TARGET_BOARD_INFO_FILE := device/lge/mako/board-info.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/mako/bluetooth
 
 # Use clang
-USE_CLANG_PLATFORM_BUILD := true
+#USE_CLANG_PLATFORM_BUILD := true
 
 # Don't create a block based package
 BLOCK_BASED_OTA := false
