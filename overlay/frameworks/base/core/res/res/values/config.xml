@@ -275,6 +275,7 @@
     <integer name="config_multiuserMaximumUsers">4</integer>
     <!--  Whether Multiuser UI should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     <!-- Flag indicating if device supports EAP SIM, AKA, AKA' -->
@@ -307,4 +308,6 @@
 
 =======
 >>>>>>> 2526fff... Overlay: Add doze
+=======
+>>>>>>> parent of 2526fff... Overlay: Add doze
 </resources>
