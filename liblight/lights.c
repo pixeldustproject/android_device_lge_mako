@@ -33,6 +33,11 @@
 #include <hardware/lights.h>
 
 /******************************************************************************/
+/*
+ * Change this to 1 to support battery notifications via BatteryService
+ */
+#define LIGHTS_SUPPORT_BATTERY 1
+#define CG_COLOR_ID_PROPERTY "ro.boot.hardware.color"
 
 static pthread_once_t g_init = PTHREAD_ONCE_INIT;
 static pthread_mutex_t g_lock = PTHREAD_MUTEX_INITIALIZER;
