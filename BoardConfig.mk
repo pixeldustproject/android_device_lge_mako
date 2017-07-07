@@ -36,9 +36,9 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 
 # Inline kernel building
-TARGET_KERNEL_CONFIG := mako_defconfig
+TARGET_KERNEL_CONFIG := sudokamikaze_mako_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/mako
-TARGET_GCC_VERSION_ARM := 6.x
+TARGET_GCC_VERSION_ARM := 6.3
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 #KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
 
