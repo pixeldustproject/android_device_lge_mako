@@ -50,6 +50,8 @@ endif
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.product.first_api_level=24
 
 PRODUCT_COPY_FILES := \
 	$(LOCAL_KERNEL):kernel
