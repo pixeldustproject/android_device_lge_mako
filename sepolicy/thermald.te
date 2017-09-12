@@ -10,6 +10,7 @@ allow thermald self:capability dac_override;
 auditallow thermald self:capability dac_override;
 
 allow thermald self:socket create_socket_perms_no_ioctl;
+allowxperm thermald self:socket ioctl msm_sock_ipc_ioctls;
 
 # CPU hotplug uevent
 allow thermald self:netlink_kobject_uevent_socket { create setopt bind read };
@@ -31,8 +32,7 @@ allow thermald sysfs_devices_system_cpu:file rw_file_perms;
 # For example, the following files pop in and out of existance:
 # /sys/devices/system/cpu/cpu1/cpufreq/cpuinfo_min_freq
 # /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
-allow thermald sysfs:file { getattr read open write };
-allow thermald sysfs:dir { read open };
+allow thermald sysfs:file write;
 
 # Connect to mpdecision.
 allow thermald mpdecision_socket:dir r_dir_perms;

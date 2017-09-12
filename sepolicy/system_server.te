@@ -25,4 +25,5 @@ allow system_server self:netlink_socket create_socket_perms_no_ioctl;
 
 # Reading from /persist/wifi/.macaddr
 allow system_server persist_file:dir r_dir_perms;
+allow system_server sysfs:file { read open };
 r_dir_file(system_server, persist_wifi_file)
