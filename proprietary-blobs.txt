@@ -30,7 +30,7 @@
 /system/bin/port-bridge
 /system/bin/qcks
 /system/bin/qmuxd
-/system/bin/qseecomd
+/system/vendor/bin/qseecomd
 /system/bin/radish
 /system/bin/rmt_storage
 /system/bin/sensors.qcom
