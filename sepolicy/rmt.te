@@ -27,5 +27,6 @@ wakelock_use(rmt)
 # Allow access to /dev/uio0.
 allow rmt uio_device:chr_file rw_file_perms;
 
-unix_socket_connect(rmt, property, init)
+#unix_socket_connect(rmt, property, init)
+set_prop(rmt,ctl_rmt_prop);
 allow rmt ctl_rmt_prop:property_service set;
