@@ -16,6 +16,7 @@
 
 #TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 #TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
+TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true

@@ -129,3 +129,7 @@
 # Sysfs files used by mpdecision
 /sys/module/pm2/modes(/.*)?            u:object_r:sysfs_mpdecision:s0
 /sys/module/pm_8x60/modes(/.*)?        u:object_r:sysfs_mpdecision:s0
+
+/sys/devices/platform/msm_hsusb_host      u:object_r:sysfs_usb:s0
+/sys/devices/platform/msm_hsusb_host.0    u:object_r:sysfs_usb:s0
+/sys/devices/platform/msm_hsusb_host(/.*)?    u:object_r:sysfs_usb:s0
