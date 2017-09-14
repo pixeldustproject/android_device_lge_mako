@@ -117,6 +117,8 @@ EXTENDED_FONT_FOOTPRINT := true
 
 MALLOC_SVELTE := true
 
+PRODUCT_FULL_TREBLE := false
+
 DEVICE_MANIFEST_FILE := device/lge/mako/manifest.xml
 
 -include vendor/lge/mako/BoardConfigVendor.mk
