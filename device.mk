@@ -41,19 +41,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-ifeq ($(USE_SVELTE_KERNEL),true)
-LOCAL_KERNEL := device/lge/mako_svelte-kernel/kernel
-else
-LOCAL_KERNEL := device/lge/mako-kernel/kernel
-endif
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
+#ifeq ($(TARGET_PREBUILT_KERNEL),)
+#ifeq ($(USE_SVELTE_KERNEL),true)
+#LOCAL_KERNEL := device/lge/mako_svelte-kernel/kernel
+#else
+#LOCAL_KERNEL := device/lge/mako-kernel/kernel
+#endif
+#else
+#LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+#endif
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.first_api_level=24
 
-PRODUCT_COPY_FILES := \
+#PRODUCT_COPY_FILES := \
 	$(LOCAL_KERNEL):kernel
 
 PRODUCT_COPY_FILES += \
@@ -124,6 +124,9 @@ PRODUCT_PACKAGES += \
     nfc_nci.bcm2079x.default \
     NfcNci \
     Tag
+
+#Display
+PRODUCT_PROPERTY_OVERRIDES += debug.hwui.use_buffer_age=false
 
 # NFC feature files + configuration
 PRODUCT_COPY_FILES += \
@@ -300,7 +303,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.nfc@1.0-impl \
     android.hardware.renderscript@1.0-impl \
-    android.hardware.sensors@1.0-impl \
     android.hardware.vibrator@1.0-impl \
     android.hardware.wifi@1.0-service
 
